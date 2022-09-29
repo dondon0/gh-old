@@ -1,0 +1,36 @@
+.navbar {
+    background-color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-dark .navbar-toggler {
+    color: white !important;
+    border-color: white !important;
+}
+
+
+
+#mainLogo {
+    height: 50px;
+    width: auto;
+}
+
+.footer {
+    background-color: black !important;
+}
+
+.icons {
+    height: 15px;
+    width: auto;
+}
+input {
+    border-radius: 30px;
+}
+
+#suggestion {
+    height: 200px;
+    width: 500px;
+}

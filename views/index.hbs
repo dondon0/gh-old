@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/gamehubIcon2.png" type="image/x-icon">
+    <title>Gamehub</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><img id="mainLogo" src="/gamehubPNG.png" alt="" srcset=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto"> 
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/games">Games</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/suggestions">Suggestions</a>
+              </li>
+               {{#if user }}
+              <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+
+              </li>
+               {{else}}
+              <li class="nav-item">
+                <a class="nav-link" href="/register">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+              {{/if}}
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron container mt-5 text-center">
+        <h1 class="display-4">Hello, epic gamers!</h1>
+        <p class="lead">This is a site for gamers by gamers.</p>
+        <hr class="my-4">
+        <p>Free Games. Free codes. For everyone. Forever.</p>
+        <p class="lead">
+            <!-- go to about -->
+            <a class="btn btn-primary btn-lg" href="/about" role="button">Would you like to know more?</a>
+        </p>
+    </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide container my-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/FrontPage.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/FrontPage2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/FrontPage3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <div class="container py-3">
+            <img src="/gamehubPNG.png" alt="">
+            <div>
+              <img class="icons" src="/instagram.svg" alt="">
+              <p>@Gamehub</p>
+            </div>
+        </div>
+    </div>
+    {{#if message}}
+                <h4 class="alert alert-danger mt-4">{{message}}</h4>
+            {{/if}}
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  
+</body>
+</html>
